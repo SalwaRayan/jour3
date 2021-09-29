@@ -1,4 +1,4 @@
-// 01 - Correction
+// 01 - Fruits
 
 var fruits = ["mango", "lemon", "blueberry"]
 
@@ -10,7 +10,7 @@ console.log(fruits)
 var ingredients = ["eggs", "milk", "butter"]
 
 console.log(ingredients[1])
-console.log(ingredients[2])
+console.log(ingredients.indexOf("butter"))
 
 // 03 - Add and Remove
 
@@ -49,6 +49,14 @@ for (var i = 1; i <= limit ; total = total + i++){
   console.log(total + i)
 }
 
+    // var total = 0
+    // var limit = 10
+
+    // for (var i = 0; i <= limit ; i++){
+    //   total = total + i 
+    //   console.log(total)
+    // }
+
 // 06 - Reverse
 
 var sentence = "Hello Konexio !"
@@ -60,30 +68,56 @@ for (var i = sentence.length - 1; i >= 0; i--) {
 }
 console.log(reverseSentence)
 
+    // for(var i = 0; i < sentence.length; i++){
+    //   reverseSentence = sentence[i] + reverseSentence
+    // }
+    // console.log(reverseSentence)
+
 // Bonus
 
-for(var i = 0;  i <= 100; i++)
+for(var i = 0;  i <= 100; i++) {
 
-if (i % 3 === 0 && i % 5 === 0) {
-  console.log(i, "fizzbuzz")
-} else if (i % 5 === 0) {
-  console.log(i, "buzz")
-} else if (i % 3 === 0) {
-  console.log(i, "fizz")
-} else if (i % 7 === 0) {
-  console.log("")
-} else {
-  console.log(i)
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log(i, "fizzbuzz")
+  } else if (i % 5 === 0) {
+    console.log(i, "buzz") 
+  } else if (i % 3 === 0) {
+    console.log(i, "fizz")
+  } else if (i % 7 === 0) {
+    console.log("")
+  } else {
+    console.log(i)
+  }
+
+  // if (i % 3 === 0 && i % 5 === 0) {
+  //   console.log(`${i} fizzbuzz`)
+  // } else if (i % 5 === 0) {
+  //   console.log(`${i} buzz`) 
+  // } else if (i % 3 === 0) {
+  //   console.log(`${i} fizz`)
+  // } else if (i % 7 === 0) {
+  //   console.log("")
+  // } else {
+  //   console.log(i)
+  // }
+
 }
 
 // Bonus II
 
 var total = 0
 var limit = 10
-var i = 1
+// var i = 1
+var counter = 0
 
-while (i <= limit){
-  total = total + i++
+// while (i <= limit){
+//   total = total + i++
+// }
+// console.log(total)
+
+while (counter <= limit) {
+  total = total + counter
+  counter++
 }
 console.log(total)
 
@@ -97,13 +131,21 @@ console.log(randomMate)
 // Bonus IV
 
 var array = []
-var number = ""
+var limit = 20
 
+for (var i = 0; i < limit ; i++ ) {
+  var number = Math.floor(Math.random()*(100 - 0 + 1) + 0)
+  array.push(number)
+}
 
-  for (; array.length <= 20 ; number = Math.floor(Math.random()*(100 - 0 + 1) + 0)) {
-    array.push(number)
+console.table(array)
+
+var max = -1
+
+for (var i = 0; i < array.length; i++){
+  if (array[i] > max) {
+    max = array[i]
   }
+}
 
-  console.table(array)
-
-  for ()
+console.log(max)
