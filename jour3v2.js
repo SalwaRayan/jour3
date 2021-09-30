@@ -228,3 +228,12 @@ console.log("")
 
 // Mega Bonus II - CORRECTION
 
+var user = {
+  firstName: "Salwa",
+  lastName: "Rayan",
+  age: 22
+}
+
+var entries = Object.entries(user)
+
+console.table(entries)
