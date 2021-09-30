@@ -113,14 +113,17 @@ console.log("")
 
 // 09 - Comptons
 
-var multiple7 = []
+// var multiple7 = []
+var count = 0
 
 for(var i = 100;  i <= 1000; i++) {
   if (i % 7 === 0) {
-    multiple7.push(i)
+    // multiple7.push(i)
+    count++
   }
 }
-console.log(multiple7.length)
+// console.log(multiple7.length)
+console.log(count)
 
 console.log("")
 
@@ -130,8 +133,8 @@ var somme = 0
 
 for (var i = 0; i < 20; i++){
   var number = Math.floor(Math.random()*(6 - 1 + 1) + 1)
-  console.log(number)
   if (number >= 5){
+    console.log(number)
     somme = somme + number
   }
 }
@@ -141,5 +144,87 @@ console.log(somme)
 
 console.log("")
 
-// Mega Bonus 
+// // Des boites
+
+
+// box1 = 12
+// box2 = 5
+// i = 12
+
+// box1 = box2   ->   5
+// box1 + box2  ->  5 + 5 = 10
+// box2 = box1 + i ->  5 + 12 = 17
+
+// i = 13
+
+// box1 = box2   ->   17
+// box1 + box2  ->  17 + 17 = 34
+// box2 = box1 + i ->  17 + 13 = 30
+
+// box1 = 17
+// box2 = 30
+// i = 14
+
+
+// // D'autres boites
+
+
+// box1 = 12
+// i = 12 // i !== 0 // i = i - 3 
+
+// box1 = 12
+// box1 = box1 + i   ->  12 + 12 = 24
+
+// box1 = 24
+// box1 = box1 + i   ->  24 + 9 = 33
+
+// box1 = 33
+// box1 = box1 + i   ->  33 + 6 = 39
+
+// box1 = 39
+// box1 = box1 + i   ->  39 + 3 = 42
+
+// box1 = 24
+// i = 0
+
+
+// // Encore des boites
+
+
+// box1 = 0
+// box2 = 3
+// i = 0 // i > -4 // i--
+
+// i % 2 === 0 --> 0 = oui
+// box1 + i --> 0 + 0 = 0
+// box2++ --> 3 + 1 = 4
+
+// i = -1
+
+// i % 2 === 0 --> -1 = non
+// box2 + i --> 4 + (-1) = 3
+// box1++ --> 0 - 1 = -1
+
+// i = -2
+
+// i % 2 === 0 --> -2 = oui
+// box1 + i --> -1 + (-2) = -3
+// box2++ --> 4 + 1 = 5
+
+// i = -3
+
+// i % 2 === 0 --> -3 = non
+// box2 + i --> 5 + (-3) = 2
+// box1++ --> -1 - 1 = -2
+
+// box1 = -2
+// box2 = 5
+// i = -4
+
+
+// Mega Bonus - CORRECTION
+
+
+
+// Mega Bonus II - CORRECTION
 
